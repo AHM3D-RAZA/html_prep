@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #252525;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+.carousel-item img {
+    height:60vh;
+    object-fit: cover;
+    object-position: 70% 25%;
+}
+
+#hero{
+    margin: 0;
+    padding: 0;
+}
+
+.img-cont{
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-txt{
+    position: absolute;
+    bottom: 0.5px;
+    left: 15px;
+    padding: 3px;
+    background-color: aliceblue;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 5px #000;
+    background: rgba(60, 58, 58, 0.5);
+    backdrop-filter: blur(10px);
+}
+.heart{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.heart:hover{
+    color: red;
+    border: 1px solid red;
+    width: 35px;
+    height: 35px;
+}
+
+h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card{
+    background: linear-gradient(#181818, #323131);
+    color: aliceblue;
+    box-shadow: -8px -8px 15px #2f2d2d;
+    border-radius: 15px;
+}
+
+.card-img-top{
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-btn{
+    background-color: aliceblue;
+    color: #252525;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #393838;
+    border: 1px solid black;
+}
+.card-btn:hover{
+    background-color: #323131;
+    border: 1px solid black;
+}
+
+#footer{
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    margin: 0px 25px 25px 25px;
+    padding-top: 5px;
+    display: flex;
+    height: 50px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+#footer h4{
+    font-size: clamp(1.1rem, 2.3vw, 3.2rem);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

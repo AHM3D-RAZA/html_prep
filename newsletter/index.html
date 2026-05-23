@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task1</title>
+        <style>
+            body{
+                background-color: midnightblue; 
+                align-items: center; 
+                display: flex; 
+                justify-content: center; 
+                min-height:100vh;
+                font-family: sans-serif;
+            }
+
+            .features {
+                list-style: none;
+                padding: 0;
+            }
+
+            .features li{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 8px 0px;
+            }
+
+            .formfield {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+                margin: 7px 0px;
+                border-radius: 8px;
+                border: 1px solid white;
+            }
+
+            button{
+                background-color: midnightblue;
+                color: white;
+                border-radius: 8px;
+                border: 1px solid white;
+            }
+
+            button:hover{
+                background-color: rgb(7, 7, 58);
+            }
+
+            main {
+                display: flex; 
+                background-color: aliceblue; 
+                border-radius: 15px; 
+                padding: 20px;
+                align-items: center;
+            }
+
+            h1{
+                color: midnightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                
+                <ul class="features">
+                    <li><img src="/images/icon-list.svg"> <span>Product discovery and building what matters</span></li>
+                    <li><img src="/images/icon-list.svg"> <span>Measuring to ensure updates are a success</span></li>
+                    <li><img src="/images/icon-list.svg"> <span>And much more!</span></li>
+                </ul>
+                <br>
+                <section>
+                    <form>
+                    <label><b>Email address</b></label><br>
+                    <input class="formfield" type="email" placeholder="email@company.com"><br>
+
+                    <button class="formfield">Subscribe to monthly newletter</button>
+                    </form>    
+                </section>
+                
+            </section>
+
+            <section style="padding: 0px 15px;">
+                <img src="/images/illustration-sign-up-desktop.svg" width="100%" height="400px">
+            </section>
+        </main>
+    </body>
+</html>
